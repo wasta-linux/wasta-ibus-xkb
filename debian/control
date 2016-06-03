@@ -1,0 +1,14 @@
+Source: wasta-ibus-xkb
+Section: utils
+Priority: extra
+Maintainer: Rik Shaw <rikshaw76@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.5
+Homepage: https://github.com/wasta-linux/wasta-ibus-xkb
+
+Package: wasta-ibus-xkb
+Architecture: all
+Depends: xmlstarlet, ${shlibs:Depends}, ${misc:Depends}
+Description: IBus XKB Keyboard Integration
+ The xkb keyboards available in ibus-setup  use a hard-coded list. This package
+ makes available other xkb keyboards in ibus-setup.
