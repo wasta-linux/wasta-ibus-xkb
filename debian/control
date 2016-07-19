@@ -10,5 +10,5 @@ Package: wasta-ibus-xkb
 Architecture: all
 Depends: xmlstarlet, ${shlibs:Depends}, ${misc:Depends}
 Description: IBus XKB Keyboard Integration
- The xkb keyboards available in ibus-setup  use a hard-coded list. This package
- makes available other xkb keyboards in ibus-setup.
+ The xkb keyboards available in ibus-setup use a hard-coded list. This package
+ makes other xkb keyboards available in ibus-setup.

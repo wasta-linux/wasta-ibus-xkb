@@ -107,7 +107,7 @@ xmlstarlet ed --inplace -s /component/engines -t elem -n engineTMP \
 # Finished
 # ------------------------------------------------------------------------------
 echo
-echo "*** Finished with wasta-multidesktop-postinst.sh"
+echo "*** Finished with wasta-ibus-xkb-postinst.sh"
 echo
 
 exit 0
