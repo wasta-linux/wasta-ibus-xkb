@@ -1,3 +1,11 @@
+wasta-ibus-xkb (0.9.2) xenial; urgency=medium
+
+  * postinst: correct xml element "layout-variant" to "layout_variant"
+    - provide cleanup for keyboard names to use correct syntax
+    - add legacy cleanup of incorrect keyboards.
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Fri, 29 Jul 2016 11:37:15 -0500
+
 wasta-ibus-xkb (0.9.1) xenial; urgency=medium
 
   * minor syntax cleanup
