@@ -1,3 +1,9 @@
+wasta-ibus-xkb (1.0.0) xenial; urgency=medium
+
+  * postinst: adding xkb:us:talt-intl:eng for use in Mozambique
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Fri, 13 Apr 2018 10:52:44 +0300
+
 wasta-ibus-xkb (0.9.2) xenial; urgency=medium
 
   * postinst: correct xml element "layout-variant" to "layout_variant"
