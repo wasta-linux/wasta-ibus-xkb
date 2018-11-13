@@ -1,3 +1,9 @@
+wasta-ibus-xkb (1.1.0) xenial; urgency=medium
+
+  * postinst: adding xkb:kh::kh for Khmer
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Tue, 13 Nov 2018 12:07:53 +0300
+
 wasta-ibus-xkb (1.0.0) xenial; urgency=medium
 
   * postinst: adding xkb:us:talt-intl:eng for use in Mozambique

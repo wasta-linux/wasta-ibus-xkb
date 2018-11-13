@@ -9,6 +9,8 @@
 #
 # 2016-06-02 rik: initial script
 # 2018-04-13 rik: Adding xkb:us:talt-intl:eng for use in Mozambique
+# 2018-11-13 rik: Adding xkb:kh::kh for Khmer
+#
 # ==============================================================================
 
 # ------------------------------------------------------------------------------
@@ -133,6 +135,24 @@ xmlstarlet ed --inplace -s /component/engines -t elem -n engineTMP \
     -s //engineTMP -t elem -n layout_variant -v "talt-intl" \
     -s //engineTMP -t elem -n longname -v "English (US, alternative international)" \
     -s //engineTMP -t elem -n description -v "English (US, alternative international)" \
+    -s //engineTMP -t elem -n icon -v "ibus-keyboard" \
+    -s //engineTMP -t elem -n rank -v "1" \
+    -r //engineTMP -v engine \
+    /usr/share/ibus/component/simple.xml
+
+# Khmer: FIRST delete existing element
+xmlstarlet ed --inplace --delete 'component/engines/engine[name="xkb:kh::kh"]' \
+    /usr/share/ibus/component/simple.xml
+
+# Khmer: SECOND create element
+xmlstarlet ed --inplace -s /component/engines -t elem -n engineTMP \
+    -s //engineTMP -t elem -n name -v "xkb:kh::kh" \
+    -s //engineTMP -t elem -n language -v "kh" \
+    -s //engineTMP -t elem -n license -v "GPL" \
+    -s //engineTMP -t elem -n author -v "Wasta Linux Team &lt;wasta.linux.team@gmail.com&gt;" \
+    -s //engineTMP -t elem -n layout -v "kh" \
+    -s //engineTMP -t elem -n longname -v "Khmer" \
+    -s //engineTMP -t elem -n description -v "Khmer" \
     -s //engineTMP -t elem -n icon -v "ibus-keyboard" \
     -s //engineTMP -t elem -n rank -v "1" \
     -r //engineTMP -v engine \
